@@ -9,10 +9,10 @@ import {
 } from "@mui/material";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import { indigo } from "@mui/material/colors";
-import { useNavigate } from "react-router-dom";
+
+import logo from "../../assets/Images/logo.png";
 
 const SignIn = ({ loginHandler }) => {
-  const navigate = useNavigate();
   const color = indigo[500];
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
@@ -30,14 +30,21 @@ const SignIn = ({ loginHandler }) => {
       <Container component="main" maxWidth="xs">
         <Box
           sx={{
-            marginTop: "calc(50vh - 200px)",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
           }}
         >
-          <Typography component="h1" variant="h5">
-            LinkedDorm
+          <img src={logo} alt="logo" className="w-[75px] mt-24 mb-20"></img>
+          <Typography
+            variant="h6"
+            align="left"
+            sx={{
+              width: "100%",
+              marginBottom: "20px",
+            }}
+          >
+            Welcome!
           </Typography>
           <TextField
             id="id"
@@ -86,18 +93,34 @@ const SignIn = ({ loginHandler }) => {
             fullWidth
             variant="contained"
             sx={{
-              mt: 3,
+              mt: 7,
               mb: 2,
-              fontSize: 15,
+              fontSize: 12,
+              height: "50px",
               backgroundColor: color,
               "&:hover": {
                 backgroundColor: color,
               },
+              borderRadius: "10px",
             }}
             onClick={loginHandler}
           >
-            로그인 하기
+            Login
           </Button>
+          <Typography
+            variant="body2"
+            sx={{
+              width: "100%",
+              textAlign: "center",
+              marginTop: "16px",
+              fontSize: "14px",
+            }}
+          >
+            Don't have an account?{"  "}
+            <Typography component="span" color="primary">
+              Sign up
+            </Typography>
+          </Typography>
         </Box>
       </Container>
     </>
