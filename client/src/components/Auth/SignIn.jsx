@@ -8,6 +8,7 @@ import {
   InputAdornment,
 } from "@mui/material";
 import AccountCircle from "@mui/icons-material/AccountCircle";
+import LockIcon from "@mui/icons-material/Lock";
 import { indigo } from "@mui/material/colors";
 
 import logo from "../../assets/Images/logo.png";
@@ -81,7 +82,7 @@ const SignIn = ({ loginHandler }) => {
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <AccountCircle />
+                  <LockIcon />
                 </InputAdornment>
               ),
             }}
