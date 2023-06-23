@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 
 import PaymentIcon from "@mui/icons-material/Payment";
-import FormatListNumberedIcon from "@mui/icons-material/FormatListNumbered";
-import FeedIcon from "@mui/icons-material/Feed";
+import CurrencyExchange from "@mui/icons-material/CurrencyExchange";
+import SyncAltIcon from "@mui/icons-material/SyncAlt";
 
 import "./Navigation.scss";
 
 const Navigation = ({ tabIdx, setTabIdx }) => {
   return (
-    <div className="navigation_box">
+    <div className="navigation_box bg-white border-t-2">
       <Box>
         <BottomNavigation
           showLabels
@@ -20,11 +20,17 @@ const Navigation = ({ tabIdx, setTabIdx }) => {
             setTabIdx(newValue);
           }}
         >
-          <BottomNavigationAction label="ProductList" icon={<FeedIcon />} />
-          <BottomNavigationAction label="Payment" icon={<PaymentIcon />} />
           <BottomNavigationAction
-            label="Point"
-            icon={<FormatListNumberedIcon />}
+            label="상품"
+            icon={<SyncAltIcon sx={{ fontSize: 27 }} />}
+          />
+          <BottomNavigationAction
+            label="결제"
+            icon={<PaymentIcon sx={{ fontSize: 27 }} />}
+          />
+          <BottomNavigationAction
+            label="포인트충천"
+            icon={<CurrencyExchange sx={{ fontSize: 27 }} />}
           />
         </BottomNavigation>
       </Box>
