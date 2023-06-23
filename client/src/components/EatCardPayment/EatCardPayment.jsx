@@ -26,7 +26,7 @@ const EatCardPayment = () => {
                 </h2>
                 <div className="flex justify-center mb-3">
                   <button
-                    className={`text-sm px-4 py-2 mr-2 rounded ${
+                    className={`text-sm px-4 py-2 mr-2 rounded animate-appear ${
                       selectedMenu === "아침"
                         ? "bg-blue-500 text-white"
                         : "bg-gray-300 text-gray-600"
@@ -36,7 +36,7 @@ const EatCardPayment = () => {
                     아침
                   </button>
                   <button
-                    className={`text-sm px-4 py-2 rounded ${
+                    className={`text-sm px-4 py-2 rounded animate-appeaR ${
                       selectedMenu === "점심"
                         ? "bg-blue-500 text-white"
                         : "bg-gray-300 text-gray-600"
@@ -46,7 +46,7 @@ const EatCardPayment = () => {
                     점심
                   </button>
                   <button
-                    className={`text-sm px-4 py-2 ml-2 rounded ${
+                    className={`text-sm px-4 py-2 ml-2 rounded animate-appear ${
                       selectedMenu === "저녁"
                         ? "bg-blue-500 text-white"
                         : "bg-gray-300 text-gray-600"
@@ -56,11 +56,11 @@ const EatCardPayment = () => {
                     저녁
                   </button>
                 </div>
-                <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+                <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3 animate-appear">
                   {selectedMenu}
                 </h1>
                 {selectedMenu === "아침" && (
-                  <p className="leading-relaxed mb-3 min-w-[270px]">
+                  <p className="leading-relaxed mb-3 min-w-[270px] animate-appear">
                     홍합무국
                     <br /> 베이컨구이
                     <br /> 쌀밥/배추김치
@@ -71,7 +71,7 @@ const EatCardPayment = () => {
                   </p>
                 )}
                 {selectedMenu === "점심" && (
-                  <p className="leading-relaxed mb-3 min-w-[270px]">
+                  <p className="leading-relaxed mb-3 min-w-[270px] animate-appear">
                     돈육짜글이찌개
                     <br /> 쌀밥
                     <br /> 언양식불고기
@@ -82,7 +82,7 @@ const EatCardPayment = () => {
                   </p>
                 )}
                 {selectedMenu === "저녁" && (
-                  <p className="leading-relaxed mb-3 min-w-[270px]">
+                  <p className="leading-relaxed mb-3 min-w-[270px] animate-appear">
                     치즈김치볶음밥
                     <br /> 계란후라이
                     <br /> 유부우동장국
@@ -92,7 +92,7 @@ const EatCardPayment = () => {
                     <br /> 쥬시쿨
                   </p>
                 )}
-                <p className="text-indigo-500 inline-flex items-center">
+                <p className="text-indigo-500 inline-flex items-center animate-appear">
                   <svg
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
@@ -110,7 +110,7 @@ const EatCardPayment = () => {
                 <div>
                   {!showPayment && (
                     <button
-                      className="bg-blue-500 text-white mt-4 px-4 py-2 rounded"
+                      className="bg-blue-500 text-white mt-4 px-4 py-2 rounded animate-appear"
                       onClick={handlePaymentClick}
                     >
                       결제 바코드 보기
