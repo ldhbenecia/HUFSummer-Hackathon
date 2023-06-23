@@ -1,9 +1,10 @@
 # `2nd-HUFSummer-Hackathon`
 
 ### 모현초3학년2반: 임동혁, 신웅비, 전승재, 노기연
+음식물 쓰레기 문제에 도전하는 긱식 결제 서비스
 
-`JavaScript` `TailwindCSS` `SCSS` `Mui`
-
+`ReactJS` `JavaScript` `TailwindCSS` `SCSS`
+- [모현초3학년2반 Notion](https://clearcat.notion.site/LinkedDorm-f98712033a6b4160ae6085f97711cf47?pvs=4 "notion")
 <br/>
 
 # LinkedDorm
@@ -18,6 +19,9 @@
 # 1. Setup
 
 ```sh
+# 0. clone fork project
+git clone https://github.com/2nd-HUFSummer-Hackathon/LinkedDorm.git
+
 # 1. package install
 npm install
 
@@ -40,12 +44,37 @@ client
     ├── components 
     │   └── Auth
     │       └─── SignIn.jsx
+    │ 
     │   └── EatCardPayment
+    │       └─── Header
+    │           └─── Header.jsx
+    │           └─── Header.scss
+    │       └─── EatCardPayment.jsx
+    │       └─── EatCardPayment.scss
+    │ 
     │   └── Main
+    │       └─── Main.jsx
+    │ 
     │   └── Navigation
+    │       └─── Navigation.jsx
+    │       └─── Navigation.scss
+    │ 
     │   └── PointPurchaseList
+    │       └─── PointPurchaseList.jsx
+    │ 
     │   └── PointPurchasePage
+    │       └─── BigBox
+    │           └─── BigBox.jsx
+    │           └─── BigBox.scss
+    │       └─── Purchasebutton
+    │           └─── Purchasebutton.jsx
+    │           └─── Purchasebutton.scss
+    │ 
     │   └── ProductList
+    │       └─── Header
+    │           └─── Header.jsx
+    │       └─── ProductList.jsx
+    │  
     │   └── UserProfile
     │       
     │       
