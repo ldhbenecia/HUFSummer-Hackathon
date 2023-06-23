@@ -1,6 +1,7 @@
 .big_size_box {
   position: relative;
   color: #fff;
+  margin-bottom: 10px;
 
   .img {
     height: 100px;
@@ -14,9 +15,16 @@
     margin-bottom: 30px;
     .price {
       font-size: 15px;
+      margin-bottom: 5px;
     }
     .point {
-      font-size: 30px;
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 25px;
+    }
+    .point_original {
+      font-size: 13px;
+      text-decoration: line-through;
     }
   }
 
@@ -50,5 +58,5 @@
 }
 
 .unchecked {
-  background-color: #b3b2ba;
+  background-color: #b6b6b6;
 }
