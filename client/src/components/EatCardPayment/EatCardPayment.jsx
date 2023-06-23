@@ -16,7 +16,7 @@ const EatCardPayment = () => {
 
   return (
     <>
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font animate-appear">
         <div className="container px-5 py-5 mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="p-4 lg:w-1/3">
@@ -26,7 +26,7 @@ const EatCardPayment = () => {
                 </h2>
                 <div className="flex justify-center mb-3">
                   <button
-                    className={`text-sm px-4 py-2 mr-2 rounded animate-appear ${
+                    className={`text-sm px-4 py-2 mr-2 rounded ${
                       selectedMenu === "아침"
                         ? "bg-blue-500 text-white"
                         : "bg-gray-300 text-gray-600"
@@ -36,7 +36,7 @@ const EatCardPayment = () => {
                     아침
                   </button>
                   <button
-                    className={`text-sm px-4 py-2 rounded animate-appear ${
+                    className={`text-sm px-4 py-2 rounded ${
                       selectedMenu === "점심"
                         ? "bg-blue-500 text-white"
                         : "bg-gray-300 text-gray-600"
@@ -46,7 +46,7 @@ const EatCardPayment = () => {
                     점심
                   </button>
                   <button
-                    className={`text-sm px-4 py-2 ml-2 rounded animate-appear ${
+                    className={`text-sm px-4 py-2 ml-2 rounded ${
                       selectedMenu === "저녁"
                         ? "bg-blue-500 text-white"
                         : "bg-gray-300 text-gray-600"
@@ -60,7 +60,7 @@ const EatCardPayment = () => {
                   {selectedMenu}
                 </h1>
                 {selectedMenu === "아침" && (
-                  <p className="leading-relaxed mb-3 min-w-[270px] animate-appear">
+                  <p className="leading-relaxed mb-3 min-w-[270px]">
                     홍합무국
                     <br /> 베이컨구이
                     <br /> 쌀밥/배추김치
@@ -71,7 +71,7 @@ const EatCardPayment = () => {
                   </p>
                 )}
                 {selectedMenu === "점심" && (
-                  <p className="leading-relaxed mb-3 min-w-[270px] animate-appear">
+                  <p className="leading-relaxed mb-3 min-w-[270px]">
                     돈육짜글이찌개
                     <br /> 쌀밥
                     <br /> 언양식불고기
@@ -82,7 +82,7 @@ const EatCardPayment = () => {
                   </p>
                 )}
                 {selectedMenu === "저녁" && (
-                  <p className="leading-relaxed mb-3 min-w-[270px] animate-appear">
+                  <p className="leading-relaxed mb-3 min-w-[270px]">
                     치즈김치볶음밥
                     <br /> 계란후라이
                     <br /> 유부우동장국
