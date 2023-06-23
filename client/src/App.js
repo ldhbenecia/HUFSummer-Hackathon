@@ -5,7 +5,7 @@ import MainPage from "./pages/Main/MainPage";
 
 function App() {
   return (
-    <div className="relative top-0 h-full overflow-hidden bg-gray-50">
+    <div className="top-0 h-full overflow-hidden bg-gray-50">
       <div className="flex flex-col w-full max-w-[460px] md:mx-auto ">
         <Router>
           <Routes>

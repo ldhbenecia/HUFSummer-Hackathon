@@ -4,3 +4,13 @@
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+.background_payment {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.background_payment2 {
+  background: rgba(81, 82, 82, 0.8);
+  backdrop-filter: blur(5px);
+}

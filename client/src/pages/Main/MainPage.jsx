@@ -14,7 +14,7 @@ const MainPage = () => {
     setLoginState(true);
   };
 
-  const [tabIdx, setTabIdx] = useState(0);
+  const [tabIdx, setTabIdx] = useState(1);
 
   return (
     <>

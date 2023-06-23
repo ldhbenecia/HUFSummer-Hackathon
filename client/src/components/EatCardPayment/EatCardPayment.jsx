@@ -39,7 +39,11 @@ const EatCardPayment = () => {
   };
 
   return (
-    <div className="flex flex-col bg-gray-50">
+    <div
+      className={`flex flex-col bg-gray-50 ${
+        showPayment && "background_payment"
+      }`}
+    >
       <div className="flex justify-end p-6" ref={wrapperRef}>
         <AccountCircleIcon sx={{ "font-size": "35px" }} />
       </div>
@@ -51,7 +55,11 @@ const EatCardPayment = () => {
         <div className="container px-5 py-5 mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="p-4 lg:w-1/3">
-              <div className="h-full bg-white shadow-md bg-opacity-75 px-8 pt-5 pb-5 rounded-lg overflow-hidden text-center relative">
+              <div
+                className={`h-full bg-white shadow-md bg-opacity-75 px-8 pt-5 pb-5 rounded-lg overflow-hidden text-center relative ${
+                  showPayment && "background_payment2"
+                }`}
+              >
                 <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                   기숙사 식당 메뉴
                 </h2>
@@ -114,16 +122,14 @@ const EatCardPayment = () => {
                 )}
                 {selectedMenu === "저녁" && (
                   <p className="leading-relaxed mb-3 min-w-[270px] animate-appear">
-                    {/* 치즈김치볶음밥
+                    치즈김치볶음밥
                     <br /> 계란후라이
                     <br /> 유부우동장국
                     <br /> 야채핫바/케찹
-                    <br /> 브로커리무침
-                    <br /> 배추김치
-                    <br /> 쥬시쿨 */}
-                    치즈김치볶음밥, 계란후라이, 유부우동장국, 야채핫바/케찹,
-                    브로커리무침, 배추김치,
                     <br /> 쥬시쿨
+                    {/* 치즈김치볶음밥, 계란후라이, 유부우동장국, 야채핫바/케찹,
+                    브로커리무침, 배추김치,
+                    <br /> 쥬시쿨 */}
                   </p>
                 )}
                 <p className="text-indigo-500 inline-flex items-center animate-appear">
@@ -150,18 +156,18 @@ const EatCardPayment = () => {
       <div className="flex justify-center items-center mt-16 ">
         {!showPayment && (
           <button
-            className="bg-gray-500 text-white mt-10 px-10 py-3 animate-appear rounded-2xl"
+            className="bg-gray-500 text-white mt-3 px-10 py-3 animate-appear rounded-2xl"
             onClick={handlePaymentClick}
           >
             결제 하기
           </button>
         )}
         {showPayment && (
-          <div className="fixed bottom-0 z-10 bg-white p-5 rounded-t-3xl barcode_shadow animate-barcodeMove">
+          <div className="fixed bottom-0 z-10 bg-white pb-36 px-5 rounded-t-3xl barcode_shadow animate-barcodeMove">
             <img src={barcode} alt="결제 바코드" className="p-5" />
-            <p className="flex flex-row justify-between">
+            <p className="flex flex-row justify-between font-mono text-mg ">
               <span>사용자: 전승재</span>
-              <span>잔액: 24300P</span>
+              <span>잔액: 24,300P</span>
             </p>
           </div>
         )}
