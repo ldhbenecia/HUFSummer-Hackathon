@@ -22,8 +22,8 @@ const MainPage = () => {
         <>
           <div>
             {tabIdx === 0 && <ProductListPage />}
-            {tabIdx === 1 && <PointPurchagePage />}
-            {tabIdx === 2 && <EatCardPaymentPage />}
+            {tabIdx === 1 && <EatCardPaymentPage />}
+            {tabIdx === 2 && <PointPurchagePage />}
           </div>
 
           <Navigation tabIdx={tabIdx} setTabIdx={setTabIdx} />
