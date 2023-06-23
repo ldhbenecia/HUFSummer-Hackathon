@@ -1,27 +1,34 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import Box from "@mui/material/Box";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 
-const Navigation = () => {
+import PaymentIcon from "@mui/icons-material/Payment";
+import FormatListNumberedIcon from "@mui/icons-material/FormatListNumbered";
+import FeedIcon from "@mui/icons-material/Feed";
+
+import "./Navigation.scss";
+
+const Navigation = ({ tabIdx, setTabIdx }) => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Main</Link>
-        </li>
-        <li>
-          <Link to="/eatPayment">Eat Payment</Link>
-        </li>
-        <li>
-          <Link to="/pointpurchase">Point Purchase</Link>
-        </li>
-        <li>
-          <Link to="/productlist">Product List</Link>
-        </li>
-        <li>
-          <Link to="/userprofile">User Profile</Link>
-        </li>
-      </ul>
-    </nav>
+    <div className="navigation_box">
+      <Box>
+        <BottomNavigation
+          showLabels
+          value={tabIdx}
+          onChange={(event, newValue) => {
+            setTabIdx(newValue);
+          }}
+        >
+          <BottomNavigationAction label="ProductList" icon={<FeedIcon />} />
+          <BottomNavigationAction label="Payment" icon={<PaymentIcon />} />
+          <BottomNavigationAction
+            label="Point"
+            icon={<FormatListNumberedIcon />}
+          />
+        </BottomNavigation>
+      </Box>
+    </div>
   );
 };
 

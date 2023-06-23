@@ -11,7 +11,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import { indigo } from "@mui/material/colors";
 import { useNavigate } from "react-router-dom";
 
-const SignIn = () => {
+const SignIn = ({ loginHandler }) => {
   const navigate = useNavigate();
   const color = indigo[500];
   const [id, setId] = useState("");
@@ -23,11 +23,6 @@ const SignIn = () => {
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    navigate("/");
   };
 
   return (
@@ -99,7 +94,7 @@ const SignIn = () => {
                 backgroundColor: color,
               },
             }}
-            onClick={handleSubmit}
+            onClick={loginHandler}
           >
             로그인 하기
           </Button>

@@ -1,12 +1,12 @@
-import React from 'react'
-import PointPurchase from '../../components/PointPurchase/PointPurchase'
+import React from "react";
+import PointPurchaseList from "../../components/PointPurchaseList/PointPurchaseList";
 
 const PointPurchasePage = () => {
   return (
     <div>
-      <PointPurchase />
+      <PointPurchaseList />
     </div>
-  )
-}
+  );
+};
 
-export default PointPurchasePage
+export default PointPurchasePage;
