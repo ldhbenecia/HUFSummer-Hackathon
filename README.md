@@ -22,7 +22,7 @@
 
 ```sh
 # 0. clone fork project
-git clone https://github.com/2nd-HUFSummer-Hackathon/LikedDorm.git
+git clone https://github.com/ldhbenecia/HUFSummer-Hackathon.git
 
 # 1. package install
 npm install
