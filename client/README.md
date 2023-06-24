@@ -1,13 +1,15 @@
 # `2nd-HUFSummer-Hackathon`
 
 ### 모현초3학년2반: 임동혁, 신웅비, 전승재, 노기연
-음식물 쓰레기 문제에 도전하는 긱식 결제 서비스
+ 음식물 쓰레기 문제에 도전하는 긱식 결제 서비스
+
+<br />
 
 `ReactJS` `JavaScript` `TailwindCSS` `SCSS`
 - [모현초3학년2반 Notion](https://clearcat.notion.site/LinkedDorm-f98712033a6b4160ae6085f97711cf47?pvs=4 "notion")
 <br/>
 
-# LinkedDorm
+# LikedDorm
 
 <img width="955" alt="스크린샷 2023-06-24 오전 6 18 12" src="https://github.com/ldhbenecia/Algorithm/assets/77393976/028a42bb-8cc6-46b8-9316-22f0de049183">
 
@@ -20,7 +22,7 @@
 
 ```sh
 # 0. clone fork project
-git clone https://github.com/2nd-HUFSummer-Hackathon/LinkedDorm.git
+git clone https://github.com/2nd-HUFSummer-Hackathon/LikedDorm.git
 
 # 1. package install
 npm install
